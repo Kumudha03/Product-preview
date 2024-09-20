@@ -1,0 +1,108 @@
+:root {
+    --darkcyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --verydarkgreen: hsl(157, 100%, 9%);
+    --darkgrayishblue: hsl(228, 12%, 48%)
+}
+
+body {
+    background-color: var(--cream);
+    ;
+    margin: 0;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0;
+    margin: auto;
+    width: 32rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    padding: 2rem;
+    width: 50%;
+}
+
+.desktop-img {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    display: block;
+}
+
+.mobile-img {
+    display: none;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 25%;
+}
+
+p {
+    color: var(--darkgrayishblue);
+}
+
+p:nth-of-type(2) {
+    margin-bottom: 0;
+}
+
+.price h1 {
+    color: var(--darkcyan);
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+button {
+    background-color: var(--darkcyan);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+i {
+    color: white;
+}
+
+button:hover {
+    background-color: var(--verydarkgreen);
+    cursor: pointer;
+}
+
+@media screen and (max-width:450px) {
+    main {
+        flex-direction: column;
+        width: 90vw;
+        height: fit-content;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .content {
+        height: 75%;
+        width: 83%;
+    }
+
+}
