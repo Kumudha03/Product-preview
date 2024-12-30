@@ -6,8 +6,7 @@
 }
 
 body {
-    background-color: var(--cream);
-    ;
+    background-color: var(--cream);;
     margin: 0;
     align-content: center;
     width: 100%;
